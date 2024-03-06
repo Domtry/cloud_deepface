@@ -3,6 +3,11 @@ readme.md
 src/cloud_deepface/DeepFace.py
 src/cloud_deepface/__init__.py
 src/cloud_deepface/setting.py
+src/cloud_deepface.egg-info/PKG-INFO
+src/cloud_deepface.egg-info/SOURCES.txt
+src/cloud_deepface.egg-info/dependency_links.txt
+src/cloud_deepface.egg-info/requires.txt
+src/cloud_deepface.egg-info/top_level.txt
 src/cloud_deepface/basemodels/ArcFace.py
 src/cloud_deepface/basemodels/DeepID.py
 src/cloud_deepface/basemodels/Dlib.py
@@ -48,9 +53,4 @@ src/cloud_deepface/modules/preprocessing.py
 src/cloud_deepface/modules/recognition.py
 src/cloud_deepface/modules/representation.py
 src/cloud_deepface/modules/verification.py
-src/it_deepface.egg-info/PKG-INFO
-src/it_deepface.egg-info/SOURCES.txt
-src/it_deepface.egg-info/dependency_links.txt
-src/it_deepface.egg-info/requires.txt
-src/it_deepface.egg-info/top_level.txt
 tests/test_cloud_deepface.py

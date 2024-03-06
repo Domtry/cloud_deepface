@@ -1,8 +1,8 @@
 [project]
-name = "it_deepface"
+name = "cloud_deepface"
 version = "0.0.1"
 authors = [
-  { name="dimitri.faye", email="ddf@incubtek.com" },
+  { name="domtry", email="doffoufaye@gmail.com" },
 ]
 description = "Package to permit ..."
 readme = "readme.md"
