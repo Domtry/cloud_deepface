@@ -3,7 +3,8 @@
 cloud_deepface
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+download package [pip](https://github.com/Domtry/cloud_deepface/blob/main/dist/it_deepface-0.0.1.tar.gz.)
+and copy file in your racine projet.
 
 ```bash
 pip install cloud_deepface  
