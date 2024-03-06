@@ -37,9 +37,6 @@ response = DeepFace.find_from_cloud(
     driver="minio",
     bin_path="./datasets")
 
-# execute verification
-fdd_response = FDD.verify_images(path_img1, path_img2)
-
 
 # returns '{'verified': True, 'path_img': ['link'], 'threshold': 0.68}'
 print(fdd_response)
