@@ -6,24 +6,41 @@ it_deepface
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install it_deepface  
+pip install cloud_deepface  
 ```
 
 ## Usage
 
 ```python
-from it_deepface import FaceDuplicationDetection as FDD
+from cloud_deepface import DeepFace
 
 
-# select two images path
-path_img1, path_img2 = "./datasets/img_6.png", "./datasets/img_8.png"
+#config minio
+from cloud_deepface.driver import config
 
+config.DRIVER_HOSTNAME = "driver hostname"
+config.DRIVER_SECRET_KEY = "driver secret key"
+config.DRIVER_ACCESS_KEY = "driver access key"
+config.DRIVER_BUCKET_NAME = "cloud bucket storage name"
+config.DRIVER_REGION = "driver region"
+config.DRIVER_PROTOCOL_SECURE = False
+
+# select image url
+got_url = "https://www.shutterstock.com/image-photo/image-african-man-foot-wearworkshop-600nw-1839501016.jpg"
+
+# lunch detection image url
+response = DeepFace.find_from_cloud(
+    img_url=got_url,
+    synchronization=False,
+    bucket_name="storages",
+    driver="minio",
+    bin_path="./datasets")
 
 # execute verification
 fdd_response = FDD.verify_images(path_img1, path_img2)
 
 
-# returns '{'verified': True, 'path_img': ['./datasets/img_6.png', './datasets/img_8.png'], 'threshold': 0.68}'
+# returns '{'verified': True, 'path_img': ['link'], 'threshold': 0.68}'
 print(fdd_response)
 ```
 
