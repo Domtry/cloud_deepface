@@ -14,8 +14,7 @@ class TestCloudDeepFace:
             img_url=got_url,
             synchronization=False,
             bucket_name="storages",
-            driver="minio",
-            bin_path="./datasets")
+            driver="minio")
 
         assert response["verified"] is True
         assert response["path_img"] is not None
