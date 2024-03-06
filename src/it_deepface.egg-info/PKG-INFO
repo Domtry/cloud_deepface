@@ -13,7 +13,6 @@ Classifier: Operating System :: OS Independent
 Classifier: Development Status :: 4 - Beta
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
-License-File: license
 Requires-Dist: minio==7.2.4
 Requires-Dist: mtcnn==0.1.1
 Requires-Dist: numpy==1.26.4
