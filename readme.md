@@ -1,6 +1,6 @@
-# IncubTek Image Duplicate Detection
+#Cloud Deepface 
 
-it_deepface
+cloud_deepface
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
