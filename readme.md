@@ -7,7 +7,7 @@ download package [pip](https://github.com/Domtry/cloud_deepface/blob/main/dist/c
 and copy file in your racine projet.
 
 ```bash
-pip install cloud_deepface  
+pip install cloud_deepface-0.0.1.tar.gz  
 ```
 
 ## Usage
