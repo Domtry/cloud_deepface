@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: it_deepface
+Version: 0.0.1
+Summary: Package to permit ...
+Author-email: "dimitri.faye" <ddf@incubtek.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/me/spam.git
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: license
+Requires-Dist: minio==7.2.4
+Requires-Dist: mtcnn==0.1.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: opencv-python==4.9.0.80
+Requires-Dist: pandas==2.2.0
+Requires-Dist: tensorflow==2.15.0
+Requires-Dist: tqdm==4.66.2
+Requires-Dist: keras==2.15.0
+Requires-Dist: retina-face==0.0.14
+
+# IncubTek Image Duplicate Detection
+
+it_deepface
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install it_deepface  
+```
+
+## Usage
+
+```python
+from it_deepface import FaceDuplicationDetection as FDD
+
+
+# select two images path
+path_img1, path_img2 = "./datasets/img_6.png", "./datasets/img_8.png"
+
+
+# execute verification
+fdd_response = FDD.verify_images(path_img1, path_img2)
+
+
+# returns '{'verified': True, 'path_img': ['./datasets/img_6.png', './datasets/img_8.png'], 'threshold': 0.68}'
+print(fdd_response)
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
